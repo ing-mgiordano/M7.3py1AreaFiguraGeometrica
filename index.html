@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AreaFiguraGeometrica</title>
+</head>
+<body align="center">
+    <h1>Area de figura geometrica</h1>
+    <br><br>
+
+    <div align="center" width="800px" height="800px" style="border: 2px solid gray">
+        <h3>Circulo</h3>
+        <br>
+        <p id="resultCirc"></p>
+        <br>
+        <input type="number" id="circul-rad" placeholder="Ingrese el radio">
+        <br><br>
+        <button onclick="drawCircule()">Dibujar</button>
+        <br>
+        <canvas id="circulo" width="600px" height="600px" ></canvas>
+
+    </div>
+    
+    <div align="center" width="800px" height="800px" style="border: 2px solid gray">
+        <h3>Cuadrado</h3>
+        <br>
+        <p id="resultSquar"></p>
+        <br>
+        <input type="number" id="square-length" placeholder="Ingrese medida del cuadrado">
+        <br><br>
+        <button onclick="drawSquare()">Dibujar</button>
+        <br>
+        <canvas id="square" width="600px" height="600px"></canvas>
+    </div>
+
+    <div align="center" width="800px" height="800px" style="border: 2px solid gray">
+        <h3>Rectangulo</h3>
+        <br>
+        <p id="resultRect"></p>
+        <br>
+        <input type="number" id="rec-length1" placeholder="Ingrese base del rectangulo">
+        <br>
+        <input type="number" id="rec-length2" placeholder="Ingrese altura del rectangulo">
+        <br><br>
+        <button onclick="drawRectangle()">Dibujar</button>
+        <br>
+        <canvas id="rectangle" width="600px" height="600px"></canvas>
+    </div>
+
+    <div width="800px" height="800px" style="border: 2px solid gray">
+        <h3>Triangulo</h3>
+        <br>
+        <p id="resultTri"></p>
+        <br>
+        <input type="number" id="tri-length1" placeholder="Ingrese base del triangulo">
+        <br>
+        <input type="number" id="tri-length2" placeholder="Ingrese altura del triangulo">
+        <br><br>
+        <button onclick="drawTriangle()">Dibujar</button>
+        <br>
+        <canvas id="triangle" width="600px" height="600px"></canvas>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
